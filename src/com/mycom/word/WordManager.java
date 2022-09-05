@@ -28,13 +28,13 @@ public class WordManager {
 	public void start() {
 		while (true) {
 			int menu = selectMenu();
-			if (menu == 0) {
-				System.out.println("프로그램종료!다음에 만나요~");
+			if (menu == 0) {//0.나가기
+				System.out.println("프로그램종료!!다음에 만나요~");
 				break;
 			}
-			if (menu == 4) {
+			if (menu == 4) {//4.단어추가
 				wordCRUD.addWord();
-			} else if (menu == 1) {
+			} else if (menu == 1) {//1.모든단어보기
 				wordCRUD.listAll();
 			}
 		}
