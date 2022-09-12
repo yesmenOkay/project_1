@@ -26,6 +26,8 @@ public class WordManager {
 	}
 
 	public void start() {
+		
+		wordCRUD.loadFile();
 		while (true) {
 			int menu = selectMenu();
 			if (menu == 0) {//0.나가기
@@ -33,9 +35,25 @@ public class WordManager {
 				break;
 			}
 			if (menu == 4) {//4.단어추가
-				wordCRUD.addWord();
-			} else if (menu == 1) {//1.모든단어보기
+				wordCRUD.addItem();
+			} 
+			else if (menu == 1) {//1.모든단어보기
 				wordCRUD.listAll();
+			}
+			else if (menu == 2) {//2.수준별단어
+				wordCRUD.searchLevel();
+			}
+			else if (menu == 3) {//3.단어 검색
+				wordCRUD.searchWord();
+			}
+			else if (menu == 5) {// update
+				wordCRUD.updateItem();
+			}
+			else if (menu == 6) {// delete
+				wordCRUD.deleteItem();
+			}
+			else if (menu == 7) {// save data
+				wordCRUD.saveFile();
 			}
 		}
 	}
