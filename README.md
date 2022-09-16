@@ -46,4 +46,6 @@
 
 
 ![7_실행(1)](https://user-images.githubusercontent.com/104616369/190799767-d2404e4a-c743-4b63-90ab-c28ed74cbaf9.PNG)
+
+
 ![7_실행(2)](https://user-images.githubusercontent.com/104616369/190799787-51efc1c5-93cf-4437-a029-a279d61cb942.PNG)
